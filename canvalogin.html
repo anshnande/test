@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dance Club Registration</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	width: 300px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+input, select, textarea {
+	margin-bottom: 15px;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+</style>
+<body>
+	<div class="container">
+		<h1>Register Your Dance Club</h1>
+		<form>
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name" required><br>
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email" required><br>
+			<label for="phone">Phone:</label><br>
+			<input type="tel" id="phone" name="phone" required><br>
+			<label for="club_type">Club Type:</label><br>
+			<select id="club_type" name="club_type" required>
+				<option value="">Select...</option>
+				<option value="ballroom">Ballroom</option>
+				<option value="salsa">Salsa</option>
+				<option value="hip_hop">Hip Hop</option>
+				<option value="other">Other</option>
+			</select><br>
+			<label for="description">Description:</label><br>
+			<textarea id="description" name="description" required></textarea><br>
+			<input type="submit" value="Register">
+		</form>
+	</div>
+</body>
+</html>
